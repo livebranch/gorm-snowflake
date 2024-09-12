@@ -25,7 +25,7 @@ import (
 	"time"
 
 	"github.com/snowflakedb/gosnowflake"
-	snowflake "github.com/omixen/gorm-snowflake"
+	snowflake "github.com/livebranch/gorm-snowflake"
 	"github.com/tillfinancial/goutil/errorss"
 	"gorm.io/gorm"
 )
