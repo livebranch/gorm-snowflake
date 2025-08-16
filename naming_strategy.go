@@ -1,8 +1,6 @@
 package snowflake
 
 import (
-	"strings"
-
 	"gorm.io/gorm/schema"
 )
 
@@ -20,7 +18,7 @@ func NewNamingStrategy() schema.Namer {
 
 // ColumnName snowflake edition
 func (sns NamingStrategy) ColumnName(table, column string) string {
-	return strings.ToUpper(sns.defaultNS.ColumnName(table, column))
+	return sns.defaultNS.ColumnName(table, column)
 }
 
 // TableName snowflake edition
